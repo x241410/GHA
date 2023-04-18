@@ -168,6 +168,13 @@
 			<version>v4-rev20220927-2.0.0</version>
 		</dependency>
 		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.4.0</version>
+			<scope>provided</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
 			<groupId>telus.bt.automation</groupId>
 			<artifactId>telus-api-test-core</artifactId>
 			<version>${karate.core.version}</version>
