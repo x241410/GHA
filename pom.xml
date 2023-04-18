@@ -10,11 +10,21 @@
   <name>GHA</name>
   <url>http://maven.apache.org</url>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+ <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.version>2.3.2</maven.compiler.version>
+		<maven.surefire.version>2.19.1</maven.surefire.version>
+		<extentreports.version>3.1.2</extentreports.version>
+		<cucumberJVMParallelPluginVersion>1.0.1</cucumberJVMParallelPluginVersion>
+		<karate.core.version>6.1-SNAPSHOT</karate.core.version>
+		<!-- SONAR PROPERTIES -->
+		<sonar.sources>src/main</sonar.sources>
+		<libpath>${project.basedir}\lib\</libpath>
+		<sonar.tests>src/test</sonar.tests>
+	</properties>
 
-  <build>
+	<build>
 		<finalName>${project.artifactId}</finalName>
 		<plugins>
 			<plugin>
