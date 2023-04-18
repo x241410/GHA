@@ -164,6 +164,8 @@
 			<groupId>telus.bt.automation</groupId>
 			<artifactId>telus-api-test-core</artifactId>
 			<version>${karate.core.version}</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/JAR/telus-api-test-core-6.1-SNAPSHOT.jar</systemPath>
 			<exclusions>
 				<exclusion> <!-- declare the exclusion here -->
 					<groupId>com.epam.reportportal</groupId>
