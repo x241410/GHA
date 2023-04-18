@@ -1,16 +1,17 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-  <groupId>CheckGithubActions</groupId>
-  <artifactId>GHA</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<groupId>CheckGithubActions</groupId>
+	<artifactId>GHA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 
-  <name>GHA</name>
-  <url>http://maven.apache.org</url>
+	<name>GHA</name>
+	<url>http://maven.apache.org</url>
 
- <properties>
+	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<java.version>1.8</java.version>
 		<maven.compiler.version>2.3.2</maven.compiler.version>
@@ -106,9 +107,10 @@
 	<dependencies>
 		<dependency>
 			<groupId>telus.bt.automation</groupId>
-			<!-- <artifactId>telus-test-selenium-ui-core</artifactId> -->
 			<artifactId>telus-test-selenium-ui-core</artifactId>
 			<version>6.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${project.basedir}/JAR/telus-test-selenium-ui-core-6.1-SNAPSHOT.jar</systemPath>
 		</dependency>
 		<dependency>
 			<groupId>com.epam.reportportal</groupId>
@@ -141,7 +143,7 @@
 			<artifactId>commons-model</artifactId>
 			<version>5.7.0</version>
 		</dependency>
-		
+
 		<!-- GoogleSheet Dependencies -->
 		<dependency>
 			<groupId>com.google.api-client</groupId>
